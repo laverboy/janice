@@ -1,0 +1,12 @@
+<div class="wrap newtask">
+    <div class="block">
+        <form action="">
+            <header><input type="text" ng-model="task.title"></header>
+            <section>
+                <textarea ng-model="task.description" id="" rows="5"></textarea>
+                <div class="assignedto" ng-include="'templates/assignedto.html'">
+            </section>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</div>

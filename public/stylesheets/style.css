@@ -1,0 +1,250 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body, html {
+    background: #EFE9DC;
+    font-size: 14px;
+    font-family: Avenir;
+    height: 100%;
+    position: relative;
+}
+.cf:after, .wrap:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    margin: 24px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 100;
+    font-size: 18px;
+}
+h3 {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 18px;
+}
+p {
+    margin-bottom: 14px;
+    line-height: 1.3;
+}
+a {
+    color: #a4c66e;
+    text-decoration: none;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #545352;
+    color: white;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.wrap {
+    margin: 10px auto;
+    width: 1200px;
+}
+.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 999px;
+    background-color: #A5C478;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+/* Blocks */
+.block {
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    width: 750px;
+    background-color: white;
+}
+.block header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+[data-url] {
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+Navigation
+----------------------------------------------------------------------------- */
+
+.tools {
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 10px;
+    right: 0;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #CECECE;
+}
+.tools li {
+    float: left;
+    display: block;
+    border-left: 1px solid #F1F1F1;
+}
+.tools li a {
+    color: rgb(60, 60, 60);
+    display: block;
+    padding: 15px;
+    height: 25px;
+    line-height: 26px;
+    border-bottom: 1px solid transparent;
+}
+.tools li a:hover, .tools li a.selected {
+    border-bottom: 1px solid #333;
+}
+.unassigned_count {
+    background-color: #7F5D5C;
+    margin-right: 5px;
+}
+
+.unassigned {
+    position: absolute;
+    left: 50%;
+    z-index: -100;
+    margin-top: -3px;
+    margin-left: -160px;
+    width: 320px;
+    background-color: white;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -ms-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+.unassigned:after {
+    position: absolute;
+    top:-10px;
+    left: 50%;
+    margin-left: -10px;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    content: "";
+}
+.unassigned.show {
+    z-index: 100;
+    opacity: 1;
+}
+
+
+/* -----------------------------------------------------------------------------
+Forms
+----------------------------------------------------------------------------- */
+
+input[type=text], input[type=password], input[type=submit], textarea {
+    margin: 0;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #fafafa;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: Avenir;
+}
+
+textarea {
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type=submit] {
+    border: none;
+    background: #a4c66e;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+User Task List
+----------------------------------------------------------------------------- */
+.tasklist {
+    background-color: #fff;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    box-shadow: 1px 1px 3px #CECECE;
+}
+.tasklist img {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+/* -----------------------------------------------------------------------------
+New Task
+----------------------------------------------------------------------------- */
+.newtask header input {
+    width: 75%;
+    font-size: 20px;
+}
+/* -----------------------------------------------------------------------------
+Assigned To Selector
+----------------------------------------------------------------------------- */
+.assignedto {
+    margin-top: 20px;
+}
+.userthumb img {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+    cursor: pointer;
+}
+.userthumb:hover img, .userthumb.selected img {
+    opacity: 1;
+}
+
+
+
+/*.container {
+  position:relative;
+}
+.content.ng-enter, .content.ng-leave {
+  -webkit-transition:.3s ease-out all;
+  transition:.3s ease-out all;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:600px;
+}
+
+.content.ng-enter {
+  z-index:100;
+  left:1200px;
+  opacity:0;
+}
+.content.ng-enter.ng-enter-active {
+  left:0;
+  opacity:1;
+}
+
+.content.ng-leave {
+  z-index:101;
+  left:0;
+  opacity:1;
+}
+.content.ng-leave.ng-leave-active {
+  left:-1200px;
+  opacity:0;
+}*/

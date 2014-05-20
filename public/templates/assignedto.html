@@ -1,0 +1,6 @@
+<p><strong>Assigned To:</strong></p>
+<p>
+    <span class="userthumb" ng-repeat="user in users" ng-click="$parent.selected = user._id" ng-class="{selected : $parent.selected===user._id}">
+        <img ng-src="avatars/{{user.name}}.png">
+    </span>
+</p>

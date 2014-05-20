@@ -1,0 +1,11 @@
+doctype html
+html(ng-app="tasks")
+  head
+    title= "Tasks"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+  body
+    include includes/head
+    div.container
+        section.content(ng-view)
+    include includes/foot
